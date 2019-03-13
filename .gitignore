@@ -1,2 +1,4 @@
 *.pyc
+.mypy_cache
+*.swp
 test_package/build
