@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/FiligreeTech/conan-avro.svg?branch=master)](https://travis-ci.org/FiligreeTech/conan-avro)
 [![Build status](https://ci.appveyor.com/api/projects/status/l602oo25y09m5pka?svg=true)](https://ci.appveyor.com/project/filigreetech/conan-avro)
 
-[Conan](https://bintray.com/filigreetech/conan-pkg/avro%3Afiligreetech) package for [link](URL), DESCRIPTIO N.
+[Conan](https://bintray.com/filigreetech/conan-pkg/avro%3Afiligreetech) package for [avro](https://avro.apache.org/), for serialisation.
 
 ## Usage
 
