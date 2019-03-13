@@ -9,7 +9,7 @@ class AvroConan(ConanFile):
     description = "https://avro.apache.org/"
     topics = ("avro")
     settings = "os", "compiler", "build_type", "arch"
-    options = {"shared": [True, False], "fPIC":[True,False]}
+    options = {"shared": [False], "fPIC":[True]}
     default_options = "shared=False", "fPIC=True"
     generators = "cmake"
     requires = "boost/1.68.0@conan/stable"
