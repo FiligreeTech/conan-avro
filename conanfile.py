@@ -57,6 +57,16 @@ add_dependencies (AvrogencppTests bigrecord_hh bigrecord_r_hh bigrecord2_hh
         replaceText("target_link_libraries (precompile avrocpp_s ${Boost_LIBRARIES})")
 
 
+        replaceText("add_library (avrocpp SHARED ${AVRO_SOURCE_FILES})")
+        replaceText("""set_property (TARGET avrocpp
+    APPEND PROPERTY COMPILE_DEFINITIONS AVRO_DYN_LINK)""")
+        replaceText("""set_target_properties (avrocpp PROPERTIES
+    VERSION ${AVRO_VERSION_MAJOR}.${AVRO_VERSION_MINOR})""")
+        replaceText("install (TARGETS avrocpp avrocpp_s","install (TARGETS avrocpp_s")
+        replaceText("set_property (TARGET avrocpp avrocpp_s","set_property (TARGET avrocpp_s")
+        replaceText("target_link_libraries (avrocpp ${Boost_LIBRARIES})")
+
+
     def configure_cmake(self):
         cmake = CMake(self)
         cmake.vebose = True
